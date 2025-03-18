@@ -10,11 +10,11 @@ export const createUser = async (req: Request, res: Response) => {
 
     const { email, password } = req.body;
 
-    const errors = validationResult(req);
-    if(!errors.isEmpty()) {
-        res.status(400).json({errors: errors.array()});
-        return;
-    }
+    // const errors = validationResult(req);
+    // if(!errors.isEmpty()) {
+    //     res.status(400).json({errors: errors.array()});
+    //     return;
+    // }
 
     // TODO: No user duplicate?
 
